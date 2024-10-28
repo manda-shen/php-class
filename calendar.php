@@ -31,11 +31,11 @@
 </style>
 
 
-<ur>
+<ul>
     <li>有上個月下個月的按鈕</li>
     <li>萬年曆都在同一個頁面同一個檔案</li>
     <li>有前年和明年的按鈕</li>
-</ur>
+</ul>
 
 
 
@@ -85,8 +85,8 @@ if($month+1>12){
     $nextMonth=1;
     $nextYear=$year+1;
 }else{
-    $prevMonth=$month+1;
-    $prevYear=$year;
+    $nextMonth=$month+1;
+    $nextYear=$year;
 }
 
 
@@ -94,10 +94,12 @@ if($month+1>12){
 ?>
 
 <h3><?php echo date("{$year}年{$month}月") ?></h3>
-<a href="calendar.php?year=<?=$year-1;?>">前年</a>&nbsp;
-<a href="calendar.php?month=<?=$month-1;?>">上個月</a>&nbsp;
-<a href="calendar.php?month=<?=$month+1;?>">下個月</a>&nbsp;
-<a href="calendar.php?year=<?=$year+1;?>">明年</a>
+<a href="calendar.php?year=<?=$year-1;?>&month=<?=$month;?>">前年</a>&nbsp;
+<a href="calendar.php?year=<?=$prevYear;?>&month=<?=$prevMonth;?>">上個月</a>&nbsp;&nbsp;&nbsp;
+<a href="./calendar.php">本月</a>&nbsp;&nbsp;&nbsp;
+<a href="calendar.php?year=<?=$nextYear;?>&month=<?=$nextMonth;?>">下個月</a>&nbsp;
+<a href="calendar.php?year=<?=$year+1;?>&month=<?=$month;?>">明年</a>
+
 
 <?php
 
