@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>計算BMI</title>
+    <title>Document</title>
     <style>
+        body {
+            background-image: url(https://picsum.photos/id/57/1080);
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
         fieldset {
-            width: 70%;
+            align-self: center;
+            width: 20%;
             background: rgba(185, 223, 245, 0.3);
+            backdrop-filter: blur(10px);
             font-size: 13px;
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(166, 205, 218);
@@ -36,30 +49,22 @@
 
 <body>
     <fieldset>
-        <h1>計算BMI</h1>
-        <form action="result.php" method="get">
+        <form action="check_acc.php" method="post">
             <div>
-                <label for="height">身高</label>
-                <input type="number" name="height" id="height">
+                <label for="name">帳號</label>
+                <input type="text" name="acc" placeholder="使用者名稱" required>
             </div>
             <div>
-                <label for="weight">體重:</label>
-                <input type="text" name="weight" id="weight">
+                <label for="password" name="password">密碼</label>
+                <input type="text" name="password" placeholder="密碼" required>
             </div>
             <div>
-                <input type="submit" value="計算">
-                <input type="reset" value="清空/重置">
+                <input type="submit" value="登入">
             </div>
+
 
         </form>
     </fieldset>
-
-
-    <?php
-
-
-?>
-
 </body>
 
 </html>
