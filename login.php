@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +18,7 @@ session_start();
         }
 
         fieldset {
+            justify-content: center;
             align-self: center;
             width: 20%;
             background: rgba(185, 223, 245, 0.3);
@@ -55,7 +53,7 @@ session_start();
 
     <fieldset class="login-container">
     <?php
-    if(!isset($_SESSION['login'])){
+    if(!isset($_COOKIE['login'])){
     ?>
         <h2>登入</h2>
         <form action="check_acc.php" method="post">
