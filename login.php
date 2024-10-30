@@ -48,7 +48,13 @@
 </head>
 
 <body>
-    <fieldset>
+
+
+    <fieldset class="login-container">
+    <?php
+    if(!isset($_GET['login'])){
+    ?>
+        <h2>登入</h2>
         <form action="check_acc.php" method="post">
             <div>
                 <label for="name">帳號</label>
@@ -64,7 +70,18 @@
 
 
         </form>
+        <?php
+}else{
+?>
+        <div>
+            你已登入
+        </div>
+<?php
+}
+?>
+
     </fieldset>
+
 </body>
 
 </html>
