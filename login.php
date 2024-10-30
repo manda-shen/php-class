@@ -48,11 +48,13 @@
 </head>
 
 <body>
-
+<?php
+session_start();
+?>
 
     <fieldset class="login-container">
     <?php
-    if(!isset($_GET['login'])){
+    if(!isset($_SESSION['login'])){
     ?>
         <h2>登入</h2>
         <form action="check_acc.php" method="post">
@@ -62,7 +64,7 @@
             </div>
             <div>
                 <label for="password" name="password">密碼</label>
-                <input type="text" name="password" placeholder="密碼" required>
+                <input type="password" name="password" placeholder="密碼" required>
             </div>
             <div>
                 <input type="submit" value="登入">
