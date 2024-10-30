@@ -20,11 +20,11 @@
         fieldset {
             justify-content: center;
             align-self: center;
-            width: 20%;
+            width: 25%;
             background: rgba(185, 223, 245, 0.3);
             backdrop-filter: blur(10px);
             font-size: 13px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 3px;
             color: rgb(166, 205, 218);
             border: 1px solid rgb(174, 188, 192);
             border-radius: 10px;
@@ -32,9 +32,10 @@
         }
 
         div {
-            padding: 5px;
-            font-size: 12;
-            color: rgb(87, 95, 117);
+            padding: 5px ;
+            font-weight: 3px;
+            font-size: 12px;
+            color: black;
             border: 1px rgb(166, 172, 180);
         }
 
@@ -55,7 +56,7 @@
     <?php
     if(!isset($_COOKIE['login'])){
     ?>
-        <h2>登入</h2>
+        <div style= font-size:16px;>登入</div>
         <form action="check_acc.php" method="post">
             <div>
                 <label for="name">帳號</label>
