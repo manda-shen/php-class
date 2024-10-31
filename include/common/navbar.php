@@ -12,7 +12,7 @@ $header=[
 <h1><?=$header[$page];?></h1>
 <?php
 foreach($header as $key => $value){
-    echo "<a class='".($page==$key?'now-page':'')."' href='{$key}.php'>{$value}</a>";
+    echo "<a class='".($page==$key?'now-page':'')."' href='{$key}.php'>{$value}</a>"."&nbsp;&nbsp;&nbsp;";
 }
 
 ?>
