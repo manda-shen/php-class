@@ -1,7 +1,13 @@
 h1 {
-    color: blue;
-    background-color: yellow;
+    color: rgb(79, 92, 102);
+}
 
+h3{
+    color: white;
+}
+
+div{
+    color: rgb(120, 137, 137);
 }
 
 .now-page {
@@ -9,4 +15,14 @@ h1 {
     border: 1px solid #ccc;
     background-color: aqua;
     color: #333;
+}
+
+header {
+    position: relative;
+    background-color: #535556 ;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
 }
