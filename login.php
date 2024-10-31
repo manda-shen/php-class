@@ -51,10 +51,11 @@
 
 <body>
 
-
     <fieldset class="login-container">
     <?php
-    if(!isset($_COOKIE['login'])){
+    session_start();
+
+    if(!isset($_SESSION['login'])){
     ?>
         <div style= font-size:16px;>登入</div>
         <form action="check_acc.php" method="post">
