@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-    </style>
-</head>
-<body>
-
 
 <?php
-
-$header=[
-    'index'=>'首頁',
-    'about'=>'關於我們',
-    'product'=>'產品介紹',
-    'contact'=>'聯絡我們',
-    'login'=>'登入'
+$header = [
+    'index' => '首頁',
+    'about' => '關於我們',
+    'product' => '產品介紹',
+    'contact' => '聯絡我們',
+    'login' => '登入'
 ];
-
 ?>
 
 <header>
-<h3><?=$header[$page];?></h3>
+    <h3><?= $header[$page]; ?></h3>
 </header>
-<?php
-foreach($header as $key => $value){
-    echo "<a class='".($page==$key?'now-page':'')."' href='{$key}.php'>{$value}</a>"."&nbsp;&nbsp;&nbsp;";
-}
 
-?>
+<!-- 導覽列 -->
+<div class="navbar">
+    <?php
+    foreach ($header as $key => $value) {
+        echo "<a class='" . ($page == $key ? 'now-page' : '') . "' href='{$key}.php'>{$value}</a>";
+    }
+    ?>
+</div>
 
 
 <!-- <a class="<?=($page=='index')?'now-page':'';?>" href="index.php">首頁</a>
@@ -42,4 +31,4 @@ foreach($header as $key => $value){
 
 
 </body>
-</html>
+
