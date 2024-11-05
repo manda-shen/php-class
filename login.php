@@ -56,14 +56,14 @@
     <?php
     if(!isset($_COOKIE['login'])){
     ?>
-        <div style= font-size:16px;>登入</div>
+        <div style="font-size:16px;">登入</div>
         <form action="check_acc.php" method="post">
             <div>
-                <label for="name">帳號</label>
+                <label for="name">acc</label>
                 <input type="text" name="acc" placeholder="使用者名稱" required>
             </div>
             <div>
-                <label for="password" name="password">密碼</label>
+                <label for="password">密碼</label>
                 <input type="password" name="password" placeholder="密碼" required>
             </div>
             <div>
