@@ -174,9 +174,9 @@ for($i=0;$i<6;$i++){
     echo "</tr>";
 }
 
-
 ?>
 </table>
+
 
 </body>
 </html>
