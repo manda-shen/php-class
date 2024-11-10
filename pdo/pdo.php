@@ -34,7 +34,7 @@ foreach($rows as $row){
 <td><?=$row['id'];?></td>
 <td>
     <a href="classes_detail.php">
-    <?=$row['name'];?>
+    <?=$row['name'];?></a>
 </td>
 <td><?=$row['tutor'];?></td>
 </tr>

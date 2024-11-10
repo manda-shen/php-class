@@ -59,7 +59,7 @@
         <div style="font-size:16px;">登入</div>
         <form action="check_acc.php" method="post">
             <div>
-                <label for="name">acc</label>
+                <label for="name">帳號</label>
                 <input type="text" name="acc" placeholder="使用者名稱" required>
             </div>
             <div>
